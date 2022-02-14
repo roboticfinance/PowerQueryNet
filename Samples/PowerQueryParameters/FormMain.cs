@@ -69,17 +69,17 @@ namespace PowerQuery.Samples
             };
 
             //Add parameter to the query
-            pq.Queries.Add("List2Xlsx", string.Format("\"{0}\"", Path.Combine(myExcelPath, "List2.xlsx")));
+            pq.Queries.Add("FinXlsx", string.Format("\"{0}\"", Path.Combine(myExcelPath, "4-财务报表表样.xlsx")));
 
             //Add the required credentials
-            pq.Credentials.Add(new CredentialFile { Path = Path.Combine(myExcelPath, "List2.xlsx") });
+            pq.Credentials.Add(new CredentialFile { Path = Path.Combine(myExcelPath, "4-财务报表表样.xlsx") });
 
-            var result = pq.Execute("List2");
+            var result = pq.Execute("Fin");
 
             DisplayResult(result);
         }
 
-        private void DisplayResult(ExecuteResponse result)
+        private void DisplayResult(PowerQueryResponse result)
         {
             if (result == null)
             {
@@ -94,6 +94,11 @@ namespace PowerQuery.Samples
                 dgvResult.DataSource = result.DataTable;
             }
         }
-        
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            var form2 = new PowerQuery.Samples2.Form2();
+            form2.ShowDialog();
+        }
     }
 }

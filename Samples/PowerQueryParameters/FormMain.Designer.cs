@@ -32,6 +32,7 @@
             this.BtnList2 = new System.Windows.Forms.Button();
             this.BtnList1 = new System.Windows.Forms.Button();
             this.BtnList1and2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvResult)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,17 +44,20 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvResult.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvResult.Location = new System.Drawing.Point(12, 41);
+            this.dgvResult.Location = new System.Drawing.Point(24, 79);
+            this.dgvResult.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.dgvResult.Name = "dgvResult";
             this.dgvResult.ReadOnly = true;
-            this.dgvResult.Size = new System.Drawing.Size(493, 445);
+            this.dgvResult.RowHeadersWidth = 82;
+            this.dgvResult.Size = new System.Drawing.Size(986, 856);
             this.dgvResult.TabIndex = 100;
             // 
             // BtnList2
             // 
-            this.BtnList2.Location = new System.Drawing.Point(112, 12);
+            this.BtnList2.Location = new System.Drawing.Point(224, 23);
+            this.BtnList2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.BtnList2.Name = "BtnList2";
-            this.BtnList2.Size = new System.Drawing.Size(94, 23);
+            this.BtnList2.Size = new System.Drawing.Size(188, 44);
             this.BtnList2.TabIndex = 102;
             this.BtnList2.Text = "List2.pq";
             this.BtnList2.UseVisualStyleBackColor = true;
@@ -61,9 +65,10 @@
             // 
             // BtnList1
             // 
-            this.BtnList1.Location = new System.Drawing.Point(12, 12);
+            this.BtnList1.Location = new System.Drawing.Point(24, 23);
+            this.BtnList1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.BtnList1.Name = "BtnList1";
-            this.BtnList1.Size = new System.Drawing.Size(94, 23);
+            this.BtnList1.Size = new System.Drawing.Size(188, 44);
             this.BtnList1.TabIndex = 101;
             this.BtnList1.Text = "List1.pq";
             this.BtnList1.UseVisualStyleBackColor = true;
@@ -71,24 +76,37 @@
             // 
             // BtnList1and2
             // 
-            this.BtnList1and2.Location = new System.Drawing.Point(212, 12);
+            this.BtnList1and2.Location = new System.Drawing.Point(424, 23);
+            this.BtnList1and2.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
             this.BtnList1and2.Name = "BtnList1and2";
-            this.BtnList1and2.Size = new System.Drawing.Size(94, 23);
+            this.BtnList1and2.Size = new System.Drawing.Size(188, 44);
             this.BtnList1and2.TabIndex = 103;
             this.BtnList1and2.Text = "List1and2.pq";
             this.BtnList1and2.UseVisualStyleBackColor = true;
             this.BtnList1and2.Click += new System.EventHandler(this.BtnList1and2_Click);
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(666, 23);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(126, 44);
+            this.button1.TabIndex = 104;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // FormMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(517, 498);
+            this.ClientSize = new System.Drawing.Size(1034, 958);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.BtnList2);
             this.Controls.Add(this.BtnList1);
             this.Controls.Add(this.BtnList1and2);
             this.Controls.Add(this.dgvResult);
-            this.MinimumSize = new System.Drawing.Size(533, 533);
+            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.MinimumSize = new System.Drawing.Size(1040, 959);
             this.Name = "FormMain";
             this.Text = "PowerQuery.Samples";
             ((System.ComponentModel.ISupportInitialize)(this.dgvResult)).EndInit();
@@ -102,6 +120,7 @@
         private System.Windows.Forms.Button BtnList2;
         private System.Windows.Forms.Button BtnList1;
         private System.Windows.Forms.Button BtnList1and2;
+        private System.Windows.Forms.Button button1;
     }
 }
 

@@ -82,6 +82,16 @@ namespace PowerQueryNet.Engine
             return;
         }
 
+        public void SetCredentialKey(string url, string key)
+        {
+            DataSource dataSource = new DataSource("AzureBlobs", url);
+            DataSourceSetting dataSourceSetting = DataSourceSetting.CreateKeyCredential(key);
+
+            CredentialStore.SetCredential(dataSource, dataSourceSetting, null);
+
+            return;
+        }
+
         public bool LoadCredentials(string fileName)
         {
             try
