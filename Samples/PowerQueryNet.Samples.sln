@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestAPI", "TestAPI\TestAPI.
 EndProject
 Project("{4DF76451-A46A-4C0B-BE03-459FAAFA07E6}") = "BlobPQ", "BlobPQ\BlobPQ.mproj", "{A778DFCB-E8EE-4E60-BDE0-6C8DF7A31F26}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetAPI", "NetAPI\NetAPI.csproj", "{C3770138-19C0-423F-821E-5F72AC4C692A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{A778DFCB-E8EE-4E60-BDE0-6C8DF7A31F26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A778DFCB-E8EE-4E60-BDE0-6C8DF7A31F26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A778DFCB-E8EE-4E60-BDE0-6C8DF7A31F26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3770138-19C0-423F-821E-5F72AC4C692A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3770138-19C0-423F-821E-5F72AC4C692A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3770138-19C0-423F-821E-5F72AC4C692A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3770138-19C0-423F-821E-5F72AC4C692A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

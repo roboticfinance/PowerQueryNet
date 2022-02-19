@@ -63,12 +63,13 @@ namespace PowerQuery.Samples2
 
         private void BtnList2_Click(object sender, EventArgs e)
         {
+            
             var pq = new PowerQueryCommand
             {
                 Queries = Queries.LoadFromFolder(myQueriesPath), //Load every .pq file found in MyQueries folder
             };
 
-            var fileURL = "https://synapse4cdm.blob.core.windows.net/excels/4-%E8%B4%A2%E5%8A%A1%E6%8A%A5%E8%A1%A8%E8%A1%A8%E6%A0%B7.xlsx";
+            //var fileURL = "https://synapse4cdm.blob.core.windows.net/excels/4-%E8%B4%A2%E5%8A%A1%E6%8A%A5%E8%A1%A8%E8%A1%A8%E6%A0%B7.xlsx";
             var credentialURL = "https://synapse4cdm.blob.core.windows.net/excels";
             txtPara1.Text = string.Format("\"{0}\"", Path.Combine(credentialURL, "4-财务报表表样.xlsx"));
             //txtPara1.Text = string.Format("\"{0}\"", fileURL);

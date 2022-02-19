@@ -59,7 +59,7 @@ namespace PowerQueryNet.Engine
                     task.Dispose();
                 
                 //queryExecutor.Cancel();
-                //MashupConnection.TryCleanup();
+                MashupConnection.TryCleanup();
             }
 
             return dataTable;

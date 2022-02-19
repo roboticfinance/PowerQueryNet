@@ -22,6 +22,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PQNet", "PQNet\PQNet.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Engine", "Engine\Engine.csproj", "{35C425A2-E884-4306-8285-3FD66A86B601}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetAPI", "Samples\NetAPI\NetAPI.csproj", "{C3770138-19C0-423F-821E-5F72AC4C692A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NetCoreAPI", "NetCoreAPI\NetCoreAPI.csproj", "{F1C321AD-99E3-446E-B50B-BDD966618473}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -77,6 +81,22 @@ Global
 		{35C425A2-E884-4306-8285-3FD66A86B601}.Release|Any CPU.Build.0 = Release|Any CPU
 		{35C425A2-E884-4306-8285-3FD66A86B601}.Release|x86.ActiveCfg = Release|Any CPU
 		{35C425A2-E884-4306-8285-3FD66A86B601}.Release|x86.Build.0 = Release|Any CPU
+		{C3770138-19C0-423F-821E-5F72AC4C692A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3770138-19C0-423F-821E-5F72AC4C692A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3770138-19C0-423F-821E-5F72AC4C692A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{C3770138-19C0-423F-821E-5F72AC4C692A}.Debug|x86.Build.0 = Debug|Any CPU
+		{C3770138-19C0-423F-821E-5F72AC4C692A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3770138-19C0-423F-821E-5F72AC4C692A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3770138-19C0-423F-821E-5F72AC4C692A}.Release|x86.ActiveCfg = Release|Any CPU
+		{C3770138-19C0-423F-821E-5F72AC4C692A}.Release|x86.Build.0 = Release|Any CPU
+		{F1C321AD-99E3-446E-B50B-BDD966618473}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1C321AD-99E3-446E-B50B-BDD966618473}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1C321AD-99E3-446E-B50B-BDD966618473}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F1C321AD-99E3-446E-B50B-BDD966618473}.Debug|x86.Build.0 = Debug|Any CPU
+		{F1C321AD-99E3-446E-B50B-BDD966618473}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1C321AD-99E3-446E-B50B-BDD966618473}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1C321AD-99E3-446E-B50B-BDD966618473}.Release|x86.ActiveCfg = Release|Any CPU
+		{F1C321AD-99E3-446E-B50B-BDD966618473}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
