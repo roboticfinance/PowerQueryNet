@@ -79,9 +79,12 @@ namespace NetAPI.Controllers
 
             //pq.Credentials.Add(new CredentialKey { Url = credentialURL, Key = "jzwzk378y/lHaSA4hkyqscgYjBTgqD/tW24pw4rMs9kkwMw2QuqCnb+4X7ax244P66vjVzAiRO1I0ScCkDEepg==" });
             pq.Credentials.Add(new CredentialKey { Url = credentialURL, Key = "s4iAtRy12mL2JKV1xZtIMxckhYmD9eemM04UpF2xSof50yWZS4To8iqL6DpmTJBxt1m2Q0zCrp2XcYhutdwILA==" });
-            
+
 
             PowerQueryResponse result = pq.Execute("FinBlob");
+            //pq.QueryName = "FinBlob";
+            //PowerQueryResponse result = powerQueryService.Execute(pq);
+
             //var msg = result.ExceptionMessage==null? "OK": result.ExceptionMessage;
             //return "SQL OK";
             return result.Json;
