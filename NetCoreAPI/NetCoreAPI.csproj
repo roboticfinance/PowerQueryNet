@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
@@ -8,16 +8,34 @@
 
   <ItemGroup>
     <Compile Remove="ClientLib\**" />
+    <Compile Remove="Client\**" />
+    <Compile Remove="Engine\**" />
+    <Compile Remove="lib\**" />
+    <Compile Remove="Service\**" />
     <Content Remove="ClientLib\**" />
+    <Content Remove="Client\**" />
+    <Content Remove="Engine\**" />
+    <Content Remove="lib\**" />
+    <Content Remove="Service\**" />
     <EmbeddedResource Remove="ClientLib\**" />
+    <EmbeddedResource Remove="Client\**" />
+    <EmbeddedResource Remove="Engine\**" />
+    <EmbeddedResource Remove="lib\**" />
+    <EmbeddedResource Remove="Service\**" />
     <None Remove="ClientLib\**" />
+    <None Remove="Client\**" />
+    <None Remove="Engine\**" />
+    <None Remove="lib\**" />
+    <None Remove="Service\**" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.11.1" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
-    <PackageReference Include="System.ServiceModel.Primitives" Version="4.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Client\Client.csproj" />
   </ItemGroup>
 
 </Project>

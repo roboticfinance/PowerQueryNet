@@ -6,11 +6,12 @@ using System.Net.Http;
 using System.Web.Http;
 using PowerQueryNet.Client;
 using System.IO;
-
+using PowerQueryNet.Service;
 namespace NetAPI.Controllers
 {
     public class ValuesController : ApiController
     {
+        private static PowerQueryService powerQueryService = new PowerQueryService();
         // GET api/values
         public IEnumerable<string> Get()
         {
@@ -79,6 +80,7 @@ namespace NetAPI.Controllers
             //pq.Credentials.Add(new CredentialKey { Url = credentialURL, Key = "jzwzk378y/lHaSA4hkyqscgYjBTgqD/tW24pw4rMs9kkwMw2QuqCnb+4X7ax244P66vjVzAiRO1I0ScCkDEepg==" });
             pq.Credentials.Add(new CredentialKey { Url = credentialURL, Key = "s4iAtRy12mL2JKV1xZtIMxckhYmD9eemM04UpF2xSof50yWZS4To8iqL6DpmTJBxt1m2Q0zCrp2XcYhutdwILA==" });
             
+
             PowerQueryResponse result = pq.Execute("FinBlob");
             //var msg = result.ExceptionMessage==null? "OK": result.ExceptionMessage;
             //return "SQL OK";

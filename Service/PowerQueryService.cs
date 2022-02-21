@@ -196,7 +196,9 @@ namespace PowerQueryNet.Service
                 {
                     foreach (Credential credential in powerQueryCommand.Credentials)
                     {
-                        if (credential is CredentialFile credentialFile)
+                        if (credential is CredentialKey credentialKey)
+                            commandCredentials.SetCredentialKey(credentialKey.Url, credentialKey.Key);
+                        else if (credential is CredentialFile credentialFile)
                             commandCredentials.SetCredentialFile(credentialFile.Path);
                         else if(credential is CredentialFolder credentialFolder)
                             commandCredentials.SetCredentialFolder(credentialFolder.Path);
@@ -206,8 +208,6 @@ namespace PowerQueryNet.Service
                             commandCredentials.SetCredentialSQL(credentialSQL.SQL, credentialSQL.Username, credentialSQL.Password);
                         else if (credential is CredentialOData credentialOData)
                             commandCredentials.SetCredentialOData(credentialOData.Url, credentialOData.Username, credentialOData.Password);
-                        else if (credential is CredentialKey credentialKey)
-                            commandCredentials.SetCredentialKey(credentialKey.Url, credentialKey.Key);
                         else
                             throw new NotImplementedException("This Credential kind is not supported for now.");
                     }

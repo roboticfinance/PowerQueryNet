@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{52D2D5F7-53ED-4F5F-90EC-04322DD5833F}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NetService</RootNamespace>
+    <AssemblyName>NetService</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Data.Mashup, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.Data.Mashup.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Mashup.OAuth, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.Mashup.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Mashup.Tools, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.Mashup.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.MashupEngine, Version=1.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Microsoft.MashupEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Client\Credential.cs" />
+    <Compile Include="Client\CredentialFile.cs" />
+    <Compile Include="Client\CredentialFolder.cs" />
+    <Compile Include="Client\CredentialKey.cs" />
+    <Compile Include="Client\CredentialOData.cs" />
+    <Compile Include="Client\Credentials.cs" />
+    <Compile Include="Client\CredentialSQL.cs" />
+    <Compile Include="Client\CredentialWeb.cs" />
+    <Compile Include="Client\ExecuteOutputFlags.cs" />
+    <Compile Include="Client\IPowerQueryService.cs" />
+    <Compile Include="Client\ObjectExtension.cs" />
+    <Compile Include="Client\Parameter.cs" />
+    <Compile Include="Client\Parameters.cs" />
+    <Compile Include="Client\PowerQueryCommand.cs" />
+    <Compile Include="Client\PowerQueryResponse.cs" />
+    <Compile Include="Client\Queries.cs" />
+    <Compile Include="Client\Query.cs" />
+    <Compile Include="Client\SqlTableAction.cs" />
+    <Compile Include="Engine\Command.cs" />
+    <Compile Include="Engine\CommandCredentials.cs" />
+    <Compile Include="PowerQueryService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\Microsoft.Data.Edm.NetFX35.dll" />
+    <Content Include="lib\Microsoft.Data.Mashup.dll" />
+    <Content Include="lib\Microsoft.Data.Mashup.ProviderCommon.dll" />
+    <Content Include="lib\Microsoft.Data.OData.NetFX35.dll" />
+    <Content Include="lib\Microsoft.Data.OData.Query.NetFX35.dll" />
+    <Content Include="lib\Microsoft.Data.SapClient.dll" />
+    <Content Include="lib\Microsoft.DataIntegration.FuzzyMatching.dll" />
+    <Content Include="lib\Microsoft.DataIntegration.FuzzyMatchingCommon.dll" />
+    <Content Include="lib\Microsoft.Exchange.WebServices.dll" />
+    <Content Include="lib\Microsoft.Mashup.EventSource.dll" />
+    <Content Include="lib\Microsoft.Mashup.OAuth.dll" />
+    <Content Include="lib\Microsoft.Mashup.ScriptDom.dll" />
+    <Content Include="lib\Microsoft.Mashup.Shims.dll" />
+    <Content Include="lib\Microsoft.Mashup.Tools.dll" />
+    <Content Include="lib\Microsoft.MashupEngine.dll" />
+    <Content Include="lib\Microsoft.OData.Core.NetFX35.dll" />
+    <Content Include="lib\Microsoft.OData.Core.NetFX35.V7.dll" />
+    <Content Include="lib\Microsoft.OData.Edm.NetFX35.dll" />
+    <Content Include="lib\Microsoft.OData.Edm.NetFX35.V7.dll" />
+    <Content Include="lib\Microsoft.PowerBI.AdomdClient.dll" />
+    <Content Include="lib\Microsoft.PowerBI.AdomdClient.resources.dll" />
+    <Content Include="lib\Microsoft.PowerBI.SPClient.Interfaces.dll" />
+    <Content Include="lib\Microsoft.Spatial.NetFX35.dll" />
+    <Content Include="lib\Microsoft.Spatial.NetFX35.V7.dll" />
+    <Content Include="lib\Microsoft.VisualStudio.ComponentModelHost.dll" />
+    <Content Include="lib\Microsoft.VisualStudio.CoreUtility.dll" />
+    <Content Include="lib\Microsoft.VisualStudio.Designer.Interfaces.dll" />
+    <Content Include="lib\Microsoft.VisualStudio.Editor.dll" />
+    <Content Include="lib\Microsoft.VisualStudio.Language.Intellisense.dll" />
+    <Content Include="lib\Microsoft.VisualStudio.Language.StandardClassification.dll" />
+    <Content Include="lib\Microsoft.VisualStudio.OLE.Interop.dll" />
+    <Content Include="lib\Microsoft.VisualStudio.ProjectAggregator.dll" />
+    <Content Include="lib\Microsoft.VisualStudio.Shell.12.0.dll" />
+    <Content Include="lib\Microsoft.VisualStudio.Shell.Design.dll" />
+    <Content Include="lib\Microsoft.VisualStudio.Shell.Immutable.10.0.dll" />
+    <Content Include="lib\Microsoft.VisualStudio.Shell.Immutable.11.0.dll" />
+    <Content Include="lib\Microsoft.VisualStudio.Shell.Immutable.12.0.dll" />
+    <Content Include="lib\Microsoft.VisualStudio.Shell.Interop.8.0.dll" />
+    <Content Include="lib\Microsoft.VisualStudio.Shell.Interop.9.0.dll" />
+    <Content Include="lib\Microsoft.VisualStudio.Shell.Interop.dll" />
+    <Content Include="lib\Microsoft.VisualStudio.Text.Data.dll" />
+    <Content Include="lib\Microsoft.VisualStudio.Text.Logic.dll" />
+    <Content Include="lib\Microsoft.VisualStudio.Text.UI.dll" />
+    <Content Include="lib\Microsoft.VisualStudio.Text.UI.Wpf.dll" />
+    <Content Include="lib\Microsoft.VisualStudio.TextManager.Interop.8.0.dll" />
+    <Content Include="lib\Microsoft.VisualStudio.TextManager.Interop.dll" />
+    <Content Include="lib\Microsoft.VisualStudio.Threading.dll" />
+    <Content Include="lib\Microsoft.VisualStudio.VSHelp.dll" />
+    <Content Include="lib\msdia140.dll" />
+    <Content Include="lib\PRIVATE_ODBC32.dll" />
+    <Content Include="lib\stdole.dll" />
+    <Content Include="lib\System.Spatial.NetFX35.dll" />
+    <Content Include="lib\VSLangProj.dll" />
+    <Content Include="lib\VSLangProj2.dll" />
+    <Content Include="lib\VSLangProj80.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="lib\Microsoft.ApplicationInsights.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\Microsoft.Data.Mashup.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\Microsoft.Mashup.OAuth.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\Microsoft.Mashup.Tools.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+    <Content Include="lib\Microsoft.MashupEngine.dll">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="4.1.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="System.Runtime.Serialization.Primitives">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.ServiceModel.Primitives" Version="4.9.0" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

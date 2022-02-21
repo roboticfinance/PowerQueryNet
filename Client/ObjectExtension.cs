@@ -146,7 +146,7 @@ namespace PowerQueryNet.Client
                     content.Append(delimiter);
             }
 
-            int i = 0;
+            //int i = 0;
             foreach (DataRow dr in dataTable.Rows)
             {
                 content.Append(Environment.NewLine);
